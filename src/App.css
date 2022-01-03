@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 .App {
   text-align: center;
 }
@@ -36,3 +38,91 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* -------------- ABOUT CSS --------------- */
+.About {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  background-color: #6f5acd;
+  min-height: 100vh;
+}
+
+.About-header {
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(15px + 2vmin);
+  color: #e8e2ff;
+}
+
+#about-container {
+  display: flex;
+}
+
+#about-left {
+  width: 38%;
+  background-color: #543eb5;
+  border-radius: 20px;
+  margin: 3%;
+  padding: 3%;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-size: calc(7px + 2vmin);
+  display: flex;
+  justify-content: center;
+}
+
+#about-right {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-size: calc(5px + 2vmin);
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.about-right-container {
+  display: flex;
+  flex-flow: column wrap;
+  margin: 2%;
+  padding: 2%;
+}
+
+.about-right-text {
+  background-color: #543eb5;
+  border-radius: 20px;
+  margin: 2%;
+  padding: 2%;
+}
+
+.about-right-img {
+  margin-bottom: 20%;
+}
+
+@media (max-width: 1200px) {
+  #about-container {
+    display:table;
+  }
+  #about-left {
+    width: 85%;
+  }
+}
+
+@media (max-width: 735px) {
+  #about-right {
+    display: inline-block;
+  }
+  .about-right-container {
+    margin: 2%;
+    padding: 1%;
+  }
+  .about-right-text {
+    margin: 1%;
+    padding: 1%;
+  }
+
+}
+
