@@ -1,6 +1,6 @@
-import map from './static/About/map.png';
-import phone from './static/About/phone.png';
-import './App.css';
+import map from '../static/About/map.png';
+import phone from '../static/About/phone.png';
+import '../App.css';
 
 function About() {
   return (
