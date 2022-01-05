@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import About from './screens/About'
-import Blog from './blogs/blog';
+import Blogs from './screens/Blogs';
 import Navbar from './components/navbar/Navbar'
 import {Maps} from './screens/Maps'
 
@@ -20,7 +20,7 @@ function App() {
 
         </Route>
         <Route path='/blogs'>
-          <Blog />
+          <Blogs />
         </Route>
         <Route path='/'>
 
