@@ -139,7 +139,102 @@
     margin: 1%;
     padding: 1%;
   }
+}
 
+/* -------------- VOLUNTEER CSS --------------- */
+.Volunteer {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  background-color: #e8e2ff;
+  min-height: 100vh;
+}
+
+#volunteer-container {
+  display: flex;
+}
+
+#volunteer-left {
+  margin-top: 10%;
+  margin-left: 5%;
+  margin-bottom: auto;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+}
+
+#volunteer-right {
+  margin-top: 5%;
+  margin-right: 5%;
+  width: 60%;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.volunteer-right-container {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.volunteer-title {
+  color: #6f5acd;
+  font-size: calc(45px + 2vmin);
+  font-weight: bold;
+  text-align: left;
+}
+
+.volunteer-content {
+  text-align: left;
+  font-size: calc(10px + 2vmin);
+}
+
+.volunteer-button-holder {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.volunteer-button {
+  background-color:#ff93dd;
+  border-radius:40px;
+  display:flex;
+  cursor:pointer;
+  color:#ffffff;
+  font-size:calc(20px + 2vmin);
+  font-weight: bolder;
+  padding:12px 46px;
+  text-decoration:none;
+}
+
+.volunteer-button:hover {
+  background-color:#ff93dd;
+}
+
+.volunteer-button:active {
+  position:relative;
+  top:1px;
+}
+
+.volunteer-img {
+  width: 70%;
+  height: auto;
+  align-content: center;
+}
+
+@media (max-width: 1000px) {
+  #volunteer-container {
+    display:table;
+  }
+  #volunteer-left {
+    width: 85%;
+  }
+  #volunteer-right {
+    display: inline-block;
+  }
+  .volunteer-right-container {
+    margin: 2%;
+    padding: 1%;
+  }
 }
 
 /* --- MAPS CSS --- */
