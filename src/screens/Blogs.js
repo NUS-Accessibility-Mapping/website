@@ -1,6 +1,6 @@
 import '../App.css';
 
-function Blog() {
+function Blogs() {
   return (
     <div className="Blog">
       <header className="Blog-header">
@@ -17,4 +17,4 @@ function Blog() {
   );
 }
 
-export default Blog;
+export default Blogs;
