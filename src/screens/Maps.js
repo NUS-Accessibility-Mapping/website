@@ -1,48 +1,73 @@
 import '../App.css';
 import React, { Component } from 'react';
 import Select from 'react-select';
-import utown from '../static/Viewer/21743298_1406722539365107_4308832733562613967_n.png';
-import foe from '../static/Viewer/nus-logo-png-transparent.png';
-import soc from '../static/Viewer/pngwing.com.png';
-import foss from '../static/Viewer/Screenshot (4).png';
-import biz from '../static/Viewer/1200px-NUS_coat_of_arms.svg.png';
-import fass from '../static/Viewer/21743298_1406722539365107_4308832733562613967_n.png';
+import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
+import fass_as_block from '../static/Viewer/fass-as-blocks.png';
+import fos_s13_s14_s15_s16 from '../static/Viewer/fos-s12-s13-s14-s15.png';
+import fos_s1_s2 from '../static/Viewer/fos-s1-s2.png';
 
 const options = [
     {
-        label: "University Town",
-        value: "utown"
-    },
-    {
-        label: "Faculty of Engineering",
-        value: "foe"
+        label: "Faculty of Science",
+        options: [
+            {
+                "label": "S1",
+                "value": "foss_s1_s2",
+                "map": fos_s1_s2
+            },
+            {
+                "label": "S13",
+                "value": "fos_s13_s14_s15_s16",
+                "map": fos_s13_s14_s15_s16
+            }
+        ]
     },
     {
         label: "Faculty of Arts and Social Sciences",
-        value: "fass"
+        options: [
+            {
+                "label": "Schematic",
+                "value": "fass_as_blocks",
+                "map": fass_as_block
+            }
+        ]
+    },
+    {
+        label: "Faculty of Engineering",
+        options: [
+            {
+            }
+        ]
     },
     {
         label: "School of Computing",
-        value: "soc"
+        options: [
+            {
+            }
+        ]
     },
     {
-        label: "Faculty of Science",
-        value: "foss"
+        label: "School of Business",
+        options: [
+            {
+            }
+        ]
     },
     {
-        label: "Business School",
-        value: "biz"
+        label: "School of Design and Environment",
+        options: [
+            {
+            }
+        ]
     },
-]
-
-const mapPath = {
-    'utown': utown,
-    'foe': foe,
-    'soc': soc,
-    'foss': foss,
-    'biz': biz,
-    'fass': fass
-}
+    {
+        label: "University Town",
+        options: [
+            {
+            }
+        ]
+    }
+];
 
 export class Maps extends Component {
 
@@ -60,8 +85,7 @@ export class Maps extends Component {
     }
 
     getMap = () => {
-        let location = this.state.selectedOption['value'];
-        return mapPath[location];
+        return this.state.selectedOption.map;
     }
 
     render() {
@@ -69,7 +93,7 @@ export class Maps extends Component {
 
         return (
             <div className="Maps">
-                <div id="selector">
+                <div id="maps-selector">
                     <Select
                         value={selectedOption}
                         onChange={this.handleChange}
@@ -77,8 +101,15 @@ export class Maps extends Component {
                         options={options}
                     />
                 </div>
-                <div id="maps-container">
-                    <img src={this.getMap()} height={"100%"} width={'100%'}/>
+                <div id="maps-display">
+                    <TransformWrapper
+                        minScale="1"
+                        limitToBounds={true}
+                    >
+                        <TransformComponent>
+                            <img src={this.getMap()} alt=""/>
+                        </TransformComponent>
+                    </TransformWrapper>
                 </div>
             </div>
         )
