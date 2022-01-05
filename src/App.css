@@ -154,13 +154,14 @@
   flex-direction: column;
 }
 
-#maps-container {
-  margin: 3%;
-  width: 55%;
-  height: 65vh;
-  background-color: #61dafb;
+#maps-selector {
+  width: 20%;
 }
 
-#selector {
-  width: 20%;
+#maps-display {
+  margin: 3%;
+  width: 80%;
+  height: 100vh;
+  justify-content: center;
+  display: flex;
 }
