@@ -12,7 +12,7 @@ const options = [
         options: [
             {
                 "label": "S1",
-                "value": "foss_s1_s2",
+                "value": "fos_s1_s2",
                 "map": fos_s1_s2
             },
             {
