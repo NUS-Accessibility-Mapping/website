@@ -38,7 +38,78 @@
     transform: rotate(360deg);
   }
 }
+
+/* --- HOME CSS --- */
+
+.Home {
+  background-color: #e8e2ff;
+  min-height: 100vh;
+  padding: 2%;
+}
+
+.Home h1 {
+  text-align: left;
+  font-weight: bolder;
+  font-family: 'monaco', sans-serif;
+  font-size: calc(22px + 2vmin);
+  font-stretch: ultra-expanded;
+  color: #6f5acd;
+}
+
+.Home p {
+  text-align: left;
+  overflow-wrap: normal;
+  font-family: 'monospace', sans-serif;
+  font-size: calc(34px + 2vmin);
+  font-weight: normal;
+  color: #291f80;
+}
+
+.Home span {
+  overflow-wrap: normal;
+  font-family: 'monospace', sans-serif;
+  font-size: calc(34px + 2vmin);
+  font-weight: normal;
+  color: #6f5acd;
+}
+
+.Home button {
+  background-color:#ff93dd;
+  color: white;
+  border-radius:45px;
+  width: 10.5em;
+  height: 1.5em;
+  display:flex;
+  align-items: center;
+  cursor:pointer;
+  font-size:calc(20px + 2vmin);
+  font-weight: bolder;
+  outline: none;
+  padding-left: calc(20px + 2vmin);
+  border: none;
+}
+
+#home-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#home-left {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  padding: 5%;
+}
+
+#home-right {
+  width: 35em;
+}
+
 /* -------------- BLOG CSS --------------- */
+
 .Blog {
   text-align: center;
   font-family: 'Poppins', sans-serif;
@@ -57,6 +128,7 @@
 }
 
 /* -------------- ABOUT CSS --------------- */
+
 .About {
   text-align: center;
   font-family: 'Poppins', sans-serif;
@@ -142,6 +214,7 @@
 }
 
 /* -------------- VOLUNTEER CSS --------------- */
+
 .Volunteer {
   text-align: center;
   font-family: 'Poppins', sans-serif;
@@ -241,8 +314,9 @@
 
 .Maps {
   font-family: 'Poppins', sans-serif;
-  background-color: #6f5acd;
+  background-color: #e8e2ff;
   min-height: 100vh;
+  padding: 2%;
   align-items: center;
   justify-content: center;
   display: flex;
