@@ -3,6 +3,7 @@ import About from './screens/About'
 import Blogs from './screens/Blogs';
 import Navbar from './components/navbar/Navbar'
 import {Maps} from './screens/Maps'
+import Volunteer from './screens/Volunteer'
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
           <Maps/>
         </Route>
         <Route path='/volunteer'>
-
+          <Volunteer />
         </Route>
         <Route path='/blogs'>
           <Blogs />
