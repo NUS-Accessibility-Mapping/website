@@ -38,7 +38,23 @@
     transform: rotate(360deg);
   }
 }
+/* -------------- BLOG CSS --------------- */
+.Blog {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  background-color: #6f5acd;
+  min-height: 100vh;
+}
 
+.Blog-header {
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(15px + 2vmin);
+  color: #e8e2ff;
+}
 
 /* -------------- ABOUT CSS --------------- */
 .About {
