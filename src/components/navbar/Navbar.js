@@ -1,15 +1,15 @@
 import React from 'react'
-import { NavLink, NavMenu } from './NavbarElements'
+import { NavMenu } from './NavbarElements'
+import DesktopNavigation from './DesktopNavigation'
+import MobileNavigation from './MobileNavigation'
+import './Navbar.css'
 
 const Navbar = () => {
     return (
         <>
             <NavMenu>
-                <NavLink to='/home'>Home</NavLink>
-                <NavLink to='/about'>About</NavLink>
-                <NavLink to='/maps'>Maps</NavLink>
-                <NavLink to='/volunteer'>Volunteer</NavLink>
-                <NavLink to='/blogs'>Blogs</NavLink>
+                <DesktopNavigation />
+                <MobileNavigation />
             </NavMenu>
         </>
     )
