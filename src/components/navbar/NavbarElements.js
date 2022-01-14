@@ -3,12 +3,16 @@ import styled from 'styled-components'
 
 export const NavLink = styled(Link)`
     color: #6f5acd;
-    font-size: 30px;
+    font-size: calc(1vw + 1.5vmin);
     text-decoration: none;
     border-bottom: 2px solid transparent;
 
     &:hover {
         border-bottom: 2px solid #291f80;
+    }
+
+    @media (max-width: 800px) {
+        font-size: calc(1vw + 2vmin);
     }
 `
 
