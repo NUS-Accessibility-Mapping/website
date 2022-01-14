@@ -20,7 +20,7 @@ function Volunteer() {
                     </Link>
                 </div>
                 <div id="home-right">
-                    <img src={girl} alt="" className='volunteer-img'/>
+                    <img src={girl} alt="" className="home-img"/>
                 </div>
             </body>
         </div>
