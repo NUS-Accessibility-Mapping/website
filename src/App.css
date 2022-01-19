@@ -44,14 +44,16 @@
 .Home {
   background-color: #e8e2ff;
   min-height: 100vh;
-  padding: 2%;
+  align-items: flex-start;
+  justify-content: center;
+  display: flex;
 }
 
 .Home h1 {
   text-align: left;
   font-weight: bolder;
-  font-family: 'monaco', sans-serif;
-  font-size: calc(22px + 2vmin);
+  font-family: 'Poppins', sans-serif;
+  font-size: calc(1vw + 2vmin);
   font-stretch: ultra-expanded;
   color: #6f5acd;
 }
@@ -59,16 +61,16 @@
 .Home p {
   text-align: left;
   overflow-wrap: normal;
-  font-family: 'monospace', sans-serif;
-  font-size: calc(34px + 2vmin);
+  font-family: 'Poppins', sans-serif;
+  font-size: calc(1vw + 2vmin);
   font-weight: normal;
   color: #291f80;
 }
 
 .Home span {
   overflow-wrap: normal;
-  font-family: 'monospace', sans-serif;
-  font-size: calc(34px + 2vmin);
+  font-family: 'Poppins', sans-serif;
+  font-size: calc(1vw + 2vmin);
   font-weight: normal;
   color: #6f5acd;
 }
@@ -82,10 +84,10 @@
   display:flex;
   align-items: center;
   cursor:pointer;
-  font-size:calc(20px + 2vmin);
+  font-size: calc(1vw + 2vmin);
   font-weight: bolder;
   outline: none;
-  padding-left: calc(20px + 2vmin);
+  padding-left: calc(1.5vw + 2vmin);
   border: none;
 }
 
@@ -93,19 +95,27 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 80%;
+  margin-top: 5%;
 }
 
 #home-left {
   text-align: center;
   justify-content: center;
   align-items: center;
-  width: 40%;
-  padding: 5%;
+  width: 70%;
 }
 
 #home-right {
-  width: 35em;
+  width: 28%;
+}
+
+.home-img {
+  float: right;
+  max-width: 100%;
+  height: auto;
 }
 
 /* -------------- BLOG CSS --------------- */
