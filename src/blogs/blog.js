@@ -9,7 +9,7 @@ function Blog() {
       <body id="blogs-container">
         <div className="Blog-container">
           <h2>
-            Currently Empty
+            Hello World
           </h2>
         </div>
       </body>
